@@ -1,0 +1,8 @@
+{
+    "AUTH_URL": "https://medly.oktapreview.com",
+    "AUTH_ISSUER": "<AUTH_ISSUER>",
+    "APP_CLIENT_ID": "<APP_CLIENT_ID>",
+    "USER_TYPE_ID": "<USER_TYPE_ID>",
+    "IDPS": [{ "id": "<IDP_ID>", "type": "<'GOOGLE' | 'MICROSOFT'>" }],
+    "APP_PRODUCT_CATEGORY": "<APP_PRODUCT_CATEGORY>"
+}
