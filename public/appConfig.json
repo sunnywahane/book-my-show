@@ -1,8 +1,7 @@
 {
     "AUTH_URL": "https://medly.oktapreview.com",
-    "AUTH_ISSUER": "<AUTH_ISSUER>",
-    "APP_CLIENT_ID": "<APP_CLIENT_ID>",
-    "USER_TYPE_ID": "<USER_TYPE_ID>",
-    "IDPS": [{ "id": "<IDP_ID>", "type": "<'GOOGLE' | 'MICROSOFT'>" }],
-    "APP_PRODUCT_CATEGORY": "<APP_PRODUCT_CATEGORY>"
+    "AUTH_ISSUER": "https://medly.oktapreview.com/oauth2/default",
+    "USER_TYPE_ID": "otyagt8y5gbgP3q8F1d5",
+    "APP_CLIENT_ID": "0oainnh5g5JOn6SJf1d6",
+    "IDPS": [{ "id": "0oas1g3vmy7wC2SZD1d5", "type": "GOOGLE" }]
 }

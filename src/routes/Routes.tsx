@@ -1,5 +1,5 @@
 import { CenterAlignedLoader } from '@medly-components/core';
-import { Auth, LoginCallback } from '@medlypharmacy/satellite-auth';
+import { Auth, LoginCallback, LoginPage } from '@medlypharmacy/satellite-auth';
 import { FC, lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
@@ -9,7 +9,19 @@ export const Routes: FC = () => (
     <Auth>
         <Suspense fallback={<CenterAlignedLoader />}>
             <Switch>
-                <Route exact path="/" component={Dashboard} />
+                <Route
+                    path="/"
+                    exact={true}
+                    render={routeProps => (
+                        <LoginPage
+                            forInternalApps={true}
+                            header="Sign in to Medly App"
+                            authenticatedRedirectPathname="/dashboard"
+                            {...routeProps}
+                        />
+                    )}
+                />
+                <Route exact path="/dashboard" component={Dashboard} />
                 <Route path="/implicit/callback" component={LoginCallback} />
             </Switch>
         </Suspense>
