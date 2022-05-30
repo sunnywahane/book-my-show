@@ -3,6 +3,7 @@ const project = new MedlyReactApp({
   defaultReleaseBranch: "main",
   devDeps: ["@medlypharmacy/medly-projen"],
   name: "book-my-show-app",
+  stateManager: 'redux',
   webpackConfig: {
     port: 8090,
     proxies: {

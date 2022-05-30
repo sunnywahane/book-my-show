@@ -4,12 +4,14 @@ import { MedlySidenavHeader, SideNav as MedlySideNav } from '@medly-components/l
 import { WithStyle } from '@medly-components/utils';
 import { FC, memo, useCallback } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
+import { useAuthContext } from '@medlypharmacy/satellite-auth';
 
 const Component: FC = memo(() => {
     const { pathname } = useLocation(),
+        { authState } = useAuthContext(),
         history = useHistory(),
         handlePathChange = useCallback((page: string) => history.push(page), [history]);
-    return (
+    return authState?.isAuthenticated ? (
         <MedlySideNav onChange={handlePathChange} active={pathname} defaultActive="/">
             <MedlySidenavHeader />
             <MedlySideNav.List>
@@ -19,10 +21,10 @@ const Component: FC = memo(() => {
                 </MedlySideNav.Nav>
             </MedlySideNav.List>
         </MedlySideNav>
-    );
+    ) : null;
 });
 
 Component.displayName = 'AppSideNav';
 export const SideNav: FC & WithStyle = Object.assign(Component, {
-    Style: MedlySideNav.Style,
+    Style: MedlySideNav.Style
 });

@@ -50,12 +50,20 @@
       "type": "build"
     },
     {
+      "name": "@types/react-redux",
+      "type": "build"
+    },
+    {
       "name": "@types/react-router-dom",
       "type": "build"
     },
     {
       "name": "@types/react",
       "version": "17.0.40",
+      "type": "build"
+    },
+    {
+      "name": "@types/redux-mock-store",
       "type": "build"
     },
     {
@@ -93,6 +101,14 @@
     },
     {
       "name": "projen",
+      "type": "build"
+    },
+    {
+      "name": "redux-devtools-extension",
+      "type": "build"
+    },
+    {
+      "name": "redux-mock-store",
       "type": "build"
     },
     {
@@ -138,6 +154,10 @@
       "type": "runtime"
     },
     {
+      "name": "react-redux",
+      "type": "runtime"
+    },
+    {
       "name": "react-router-dom",
       "version": "^5.3.0",
       "type": "runtime"
@@ -145,6 +165,14 @@
     {
       "name": "react",
       "version": "17.0.2",
+      "type": "runtime"
+    },
+    {
+      "name": "redux",
+      "type": "runtime"
+    },
+    {
+      "name": "redux-saga",
       "type": "runtime"
     },
     {

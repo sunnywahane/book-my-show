@@ -1,5 +1,5 @@
-import { ErrorBoundary, Header, PageLayout, SideNav } from '@components';
-import { CssBaseline, ToastContainer } from '@medly-components/core';
+import { ErrorBoundary } from '@components';
+import { CssBaseline } from '@medly-components/core';
 import Routes from '@routes';
 import { defaultTheme } from '@theme';
 import type { FC } from 'react';
@@ -12,12 +12,7 @@ const App: FC = () => (
             <CssBaseline />
             <Router>
                 <ErrorBoundary>
-                    <PageLayout>
-                        <ToastContainer position="top-end" />
-                        <SideNav />
-                        <Header />
-                        <Routes />
-                    </PageLayout>
+                    <Routes />
                 </ErrorBoundary>
             </Router>
         </>
