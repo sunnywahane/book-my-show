@@ -2,6 +2,6 @@
     "AUTH_URL": "https://medly.oktapreview.com",
     "AUTH_ISSUER": "https://medly.oktapreview.com/oauth2/default",
     "USER_TYPE_ID": "otyagt8y5gbgP3q8F1d5",
-    "APP_CLIENT_ID": "0oainnh5g5JOn6SJf1d6",
+    "APP_CLIENT_ID": "0oa3s6zv80Ri2KtHI1d7",
     "IDPS": [{ "id": "0oas1g3vmy7wC2SZD1d5", "type": "GOOGLE" }]
 }
