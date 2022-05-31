@@ -7,7 +7,6 @@ import { DashboardProps, IMovie } from './types';
 
 export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
     const [movies, setMovies] = useState<IMovie[]>([]);
-    console.log(movies);
 
     async function getMovies() {
         try {
