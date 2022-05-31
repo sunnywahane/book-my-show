@@ -16,7 +16,7 @@ export const MoviesTable: FC<MoviesTableProps> = ({ movies }) => {
             <tbody>
                 {movies.map((movie, index) => (
                     <tr key={uuidv4()}>
-                        <th scope="row">{index}</th>
+                        <th scope="row">{index + 1}</th>
                         <td>{movie.id}</td>
                         <td>{movie.title}</td>
                         <td>{movie.duration}</td>
