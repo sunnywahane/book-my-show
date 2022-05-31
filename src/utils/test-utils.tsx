@@ -9,7 +9,7 @@ import { ThemeProvider } from 'styled-components';
 
 export const mockAxios = new MockAdapter(axios);
 
-const WithThemeProvider: FC = (props) => (
+const WithThemeProvider: FC = props => (
     <ThemeProvider theme={defaultTheme}>
         <>
             <ToastContainer position="top-end" />
@@ -18,7 +18,7 @@ const WithThemeProvider: FC = (props) => (
     </ThemeProvider>
 );
 
-const WithRouter: FC = (props) => (
+const WithRouter: FC = props => (
     <MemoryRouter>
         <WithThemeProvider>{props.children}</WithThemeProvider>
     </MemoryRouter>

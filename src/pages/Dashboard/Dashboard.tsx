@@ -2,10 +2,11 @@ import { PageContent } from '@components/layout';
 import { Text } from '@medly-components/core';
 import axios from 'axios';
 import { FC, useEffect, useState } from 'react';
-import { DashboardProps } from './types';
+import MoviesTable from './components';
+import { DashboardProps, IMovie } from './types';
 
 export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
-    const [movies, setMovies] = useState([]);
+    const [movies, setMovies] = useState<IMovie[]>([]);
     console.log(movies);
 
     async function getMovies() {
@@ -26,9 +27,7 @@ export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
             <Text textWeight="Strong" textVariant="body1">
                 Movies List
             </Text>
-            {/* {movies.map((movie, index) => (
-                <div key={uuid()}>Hi</div>
-            ))} */}
+            <MoviesTable movies={movies} />
         </PageContent>
     );
 };
