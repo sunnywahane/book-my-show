@@ -11,6 +11,10 @@ const project = new MedlyReactApp({
         '/api/satellite': {
           target: 'https://api-gw.dev-medly.io',
           changeOrigin: true
+        },
+        "/api": {
+          target: 'http://localhost:9000/',
+          secure: false
         }
       }
     }
