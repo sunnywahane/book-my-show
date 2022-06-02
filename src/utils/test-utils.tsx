@@ -33,3 +33,15 @@ export const renderWithRouter = (ui: ReactElement, options?: RenderOptions): Ren
 export * from '@testing-library/react';
 // override render method
 export { customRender as render };
+
+jest.mock('@medlypharmacy/satellite-auth', () => ({
+    ...(jest.requireActual('@medlypharmacy/satellite-auth') as any),
+    useAuthContext: () => ({
+        authState: { isAuthenticated: true, isPending: false, accessToken: { accessToken: 'dummyToken' } },
+        authService: {
+            getUser: jest.fn().mockResolvedValue({
+                email: 'john@email.com'
+            })
+        }
+    })
+}));
