@@ -33,6 +33,7 @@ export const AddShow: FC<AddShowProps> = ({ getShows, moviesId, movieList }) => 
             setShow({ startTime: '', movieId: 0, price: 0 });
         } catch (e) {
             console.log(e);
+            alert('Faild to add show');
         }
         // } else {
         //     alert('Please fill relevent data');
