@@ -44,7 +44,7 @@
     "@medly/webpack-config": "^0.6.0",
     "@medlypharmacy/medly-projen": "^3.2.23",
     "@testing-library/dom": "^8.13.0",
-    "@testing-library/react": "^13.2.0",
+    "@testing-library/react": "^12.2.0",
     "@testing-library/user-event": "*",
     "@types/react": "17.0.40",
     "@types/react-dom": "17.0.13",

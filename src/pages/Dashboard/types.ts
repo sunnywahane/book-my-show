@@ -7,3 +7,9 @@ export interface IMovie {
     title: string;
     duration: number;
 }
+
+export interface IShow {
+    id: number;
+    startTime: string;
+    movieId: number;
+}

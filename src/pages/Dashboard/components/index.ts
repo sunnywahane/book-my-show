@@ -1,3 +1,5 @@
+import { AddMovie } from './AddMovie';
+import { AddShow } from './AddShow';
 import { MoviesTable } from './MoviesTable';
 
-export default MoviesTable;
+export { MoviesTable, AddMovie, AddShow };
