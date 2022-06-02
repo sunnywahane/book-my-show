@@ -47,7 +47,7 @@ export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
             <Text textWeight="Strong" textVariant="body1">
                 Show List
             </Text>
-            <AddShow getShows={getShows} moviesId={movies.map(it => it.id)} />
+            <AddShow getShows={getShows} moviesId={movies.map(it => it.id)} movieList={movies} />
             <ShowsTable movies={movies} shows={shows} />
         </PageContent>
     );

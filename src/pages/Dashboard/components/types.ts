@@ -13,6 +13,7 @@ export interface Movie {
 export interface Show {
     startTime: string;
     movieId: number;
+    price: number;
 }
 
 export type ShowTableProps = {
@@ -27,4 +28,5 @@ export type AddMovieProps = {
 export type AddShowProps = {
     getShows: Function;
     moviesId: number[];
+    movieList: IMovie[];
 };
