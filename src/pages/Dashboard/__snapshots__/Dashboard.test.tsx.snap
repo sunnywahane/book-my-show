@@ -1,0 +1,478 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard should render properly 1`] = `
+.c1 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c0 {
+  background-color: #eff2f4;
+  overflow: auto;
+  padding-top: 32px;
+}
+
+@media (max-width:1279px) {
+  .c0 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    padding-left: calc(24px + (((100vw - 1280px) / 160) * 16));
+    padding-right: calc(24px + (((100vw - 1280px) / 160) * 16));
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+<div>
+  <main
+    class="c0"
+  >
+    <strong
+      class="c1"
+    >
+      Add Movie
+    </strong>
+    <form
+      class="form-inline"
+    >
+      <div
+        class="form-group mx-sm-3 mb-2"
+      >
+        <label
+          class="sr-only"
+          for="title"
+        >
+          Title
+        </label>
+        <input
+          class="form-control"
+          id="title"
+          name="title"
+          placeholder="Title"
+          type="text"
+        />
+      </div>
+      <div
+        class="form-group mx-sm-3 mb-2"
+      >
+        <label
+          class="sr-only"
+          for="duration"
+        >
+          Duration
+        </label>
+        <input
+          class="form-control"
+          id="duration"
+          max="360"
+          min="5"
+          name="duration"
+          placeholder="Duration"
+          type="number"
+        />
+        
+      </div>
+      <button
+        class="btn btn-primary mb-2"
+        data-testid="newtest"
+        type="submit"
+      >
+        Add Movie
+      </button>
+    </form>
+    <strong
+      class="c1"
+    >
+      Movies List
+    </strong>
+    <table
+      class="table"
+    >
+      <thead
+        class="thead-light"
+      >
+        <tr>
+          <th
+            scope="col"
+          >
+            Sr. No.
+          </th>
+          <th
+            scope="col"
+          >
+            Id
+          </th>
+          <th
+            scope="col"
+          >
+            Title
+          </th>
+          <th
+            scope="col"
+          >
+            Duration
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <strong
+      class="c1"
+    >
+      Show List
+    </strong>
+    <form
+      class="form-inline"
+    >
+      <div
+        class="form-group mx-sm-3 mb-2"
+      >
+        <label
+          class="sr-only"
+          for="Movie"
+        >
+          Title
+        </label>
+        <input
+          class="form-control"
+          id="date"
+          name="startTime"
+          placeholder="Date"
+          type="datetime-local"
+        />
+        
+      </div>
+      <div
+        class="form-group mx-sm-3 mb-2"
+      >
+        <label
+          class="sr-only"
+          for="Movie"
+        >
+          Movie Id
+        </label>
+        <input
+          class="form-control"
+          id="movie"
+          min="1"
+          name="movieId"
+          placeholder="Movie"
+          type="number"
+        />
+        
+      </div>
+      <button
+        class="btn btn-primary mb-2"
+        type="submit"
+      >
+        Add Show
+      </button>
+    </form>
+    <table
+      class="table"
+    >
+      <thead
+        class="thead-light"
+      >
+        <tr>
+          <th
+            scope="col"
+          >
+            Sr.No
+          </th>
+          <th
+            scope="col"
+          >
+            Start time
+          </th>
+          <th
+            scope="col"
+          >
+            Movie
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </main>
+</div>
+`;
+
+exports[`Dashboard should show loading if isLoading Prop is true 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c2 {
+  font-size: 56px;
+}
+
+.c2 * {
+  fill: #3872D2;
+}
+
+.c0 {
+  background-color: #eff2f4;
+  overflow: auto;
+  padding-top: 32px;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.7);
+  z-index: 1;
+}
+
+@media (max-width:1279px) {
+  .c0 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    padding-left: calc(24px + (((100vw - 1280px) / 160) * 16));
+    padding-right: calc(24px + (((100vw - 1280px) / 160) * 16));
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+<div>
+  <main
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2"
+        height="1em"
+        viewBox="0 0 100 100"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M82 35.7C74.1 18 53.4 10.1 35.7 18S10.1 46.6 18 64.3l7.6-3.4c-6-13.5 0-29.3 13.5-35.3s29.3 0 35.3 13.5l7.6-3.4z"
+        >
+          <animatetransform
+            attributeName="transform"
+            attributeType="XML"
+            dur="2s"
+            from="0 50 50"
+            repeatCount="indefinite"
+            to="360 50 50"
+            type="rotate"
+          />
+        </path>
+      </svg>
+    </div>
+    <strong
+      class="c3"
+    >
+      Add Movie
+    </strong>
+    <form
+      class="form-inline"
+    >
+      <div
+        class="form-group mx-sm-3 mb-2"
+      >
+        <label
+          class="sr-only"
+          for="title"
+        >
+          Title
+        </label>
+        <input
+          class="form-control"
+          id="title"
+          name="title"
+          placeholder="Title"
+          type="text"
+        />
+      </div>
+      <div
+        class="form-group mx-sm-3 mb-2"
+      >
+        <label
+          class="sr-only"
+          for="duration"
+        >
+          Duration
+        </label>
+        <input
+          class="form-control"
+          id="duration"
+          max="360"
+          min="5"
+          name="duration"
+          placeholder="Duration"
+          type="number"
+        />
+        
+      </div>
+      <button
+        class="btn btn-primary mb-2"
+        data-testid="newtest"
+        type="submit"
+      >
+        Add Movie
+      </button>
+    </form>
+    <strong
+      class="c3"
+    >
+      Movies List
+    </strong>
+    <table
+      class="table"
+    >
+      <thead
+        class="thead-light"
+      >
+        <tr>
+          <th
+            scope="col"
+          >
+            Sr. No.
+          </th>
+          <th
+            scope="col"
+          >
+            Id
+          </th>
+          <th
+            scope="col"
+          >
+            Title
+          </th>
+          <th
+            scope="col"
+          >
+            Duration
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <strong
+      class="c3"
+    >
+      Show List
+    </strong>
+    <form
+      class="form-inline"
+    >
+      <div
+        class="form-group mx-sm-3 mb-2"
+      >
+        <label
+          class="sr-only"
+          for="Movie"
+        >
+          Title
+        </label>
+        <input
+          class="form-control"
+          id="date"
+          name="startTime"
+          placeholder="Date"
+          type="datetime-local"
+        />
+        
+      </div>
+      <div
+        class="form-group mx-sm-3 mb-2"
+      >
+        <label
+          class="sr-only"
+          for="Movie"
+        >
+          Movie Id
+        </label>
+        <input
+          class="form-control"
+          id="movie"
+          min="1"
+          name="movieId"
+          placeholder="Movie"
+          type="number"
+        />
+        
+      </div>
+      <button
+        class="btn btn-primary mb-2"
+        type="submit"
+      >
+        Add Show
+      </button>
+    </form>
+    <table
+      class="table"
+    >
+      <thead
+        class="thead-light"
+      >
+        <tr>
+          <th
+            scope="col"
+          >
+            Sr.No
+          </th>
+          <th
+            scope="col"
+          >
+            Start time
+          </th>
+          <th
+            scope="col"
+          >
+            Movie
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </main>
+</div>
+`;

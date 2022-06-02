@@ -1,4 +1,4 @@
-import { renderWithRouter, screen } from '@test-utils';
+import { renderWithRouter, screen, waitFor } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import { SideNav } from './SideNav';
 
@@ -15,6 +15,6 @@ describe('SideNav', () => {
     it('should call history.push on click on dashboard', async () => {
         renderWithRouter(<SideNav />);
         userEvent.click(screen.getByText('Dashboard'));
-        expect(mockHistoryPush).toHaveBeenCalledWith('/');
+        await waitFor(() => expect(mockHistoryPush).toHaveBeenCalledWith('/'));
     });
 });
