@@ -12,4 +12,7 @@ export interface IShow {
     id: number;
     startTime: string;
     movieId: number;
+    price: number;
+    movieLanguage: string;
+    movieType: string;
 }
