@@ -1,4 +1,4 @@
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 
 class ErrorBoundary extends PureComponent<RouteComponentProps> {

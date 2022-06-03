@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-bind */
 import axios from 'axios';
-import { FC, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { AddShowProps, Show } from './types';
 
 export const AddShow: FC<AddShowProps> = ({ getShows, moviesId }) => {

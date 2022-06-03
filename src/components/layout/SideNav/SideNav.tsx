@@ -2,9 +2,9 @@ import { Text } from '@medly-components/core';
 import { DashboardIcon } from '@medly-components/icons';
 import { MedlySidenavHeader, SideNav as MedlySideNav } from '@medly-components/layout';
 import { WithStyle } from '@medly-components/utils';
-import { FC, memo, useCallback } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
 import { useAuthContext } from '@medlypharmacy/satellite-auth';
+import React, { FC, memo, useCallback } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 
 const Component: FC = memo(() => {
     const { pathname } = useLocation(),

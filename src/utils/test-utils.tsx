@@ -4,6 +4,7 @@ import { defaultTheme } from '@theme';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import type { FC, ReactElement } from 'react';
+import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 

@@ -1,6 +1,7 @@
 import { CircleLoader } from '@medly-components/loaders';
 import { WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
+import React from 'react';
 import * as Styled from './PageContent.styled';
 import { Props } from './types';
 

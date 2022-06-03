@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { ShowTableProps } from './types';
 const { v4: uuidv4 } = require('uuid');
 

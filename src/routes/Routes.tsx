@@ -1,8 +1,8 @@
+import { Header, PageLayout, SideNav } from '@components';
 import { CenterAlignedLoader } from '@medly-components/core';
 import { Auth, LoginCallback, LoginPage } from '@medlypharmacy/satellite-auth';
-import { FC, lazy, Suspense } from 'react';
+import React, { FC, lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Header, SideNav, PageLayout } from '@components';
 
 const Dashboard = lazy(() => import(/* webpackChunkName: "Dashboard" */ /* webpackPrefetch: true */ '@pages/Dashboard'));
 
