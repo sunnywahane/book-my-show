@@ -9,13 +9,16 @@ export const AddShow: FC<AddShowProps> = ({ getShows, moviesId, movieList }) => 
     const [movieIdError, setError] = useState<string>('');
     const [dateError, setDateError] = useState<string>('');
 
+    const data = JSON.parse(localStorage.getItem('okta-token-storage') || '{}');
+    const token = data.accessToken.accessToken;
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) =>
         setShow({
             ...show,
             [e.currentTarget.id]: e.currentTarget.value
         });
-    console.log(show.movieLanguage);
-    console.log(show.movieType);
+    // console.log(show.movieLanguage);
+    // console.log(show.movieType);
     const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) =>
         setShow({
             ...show,
@@ -26,8 +29,13 @@ export const AddShow: FC<AddShowProps> = ({ getShows, moviesId, movieList }) => 
         e.preventDefault();
 
         // if (show?.price === 0 && show?.movieId === 0 && show?.startTime === '') {
+
         try {
-            await axios.post('/api/shows', show);
+            await axios.post('/api/shows', show, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
             setDateError('');
             setError('');
             getShows();
@@ -40,7 +48,7 @@ export const AddShow: FC<AddShowProps> = ({ getShows, moviesId, movieList }) => 
         //     alert('Please fill relevent data');
         // }
     }
-
+    console.log(token);
     const options = [{ value: 0, label: 'Select' }];
     const languageOptions = [
         { value: '', label: 'Select' },

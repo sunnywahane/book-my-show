@@ -11,9 +11,16 @@ export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
     const [movies, setMovies] = useState<IMovie[]>([]);
     const [shows, setShows] = useState<IShow[]>([]);
 
+    const data = JSON.parse(localStorage.getItem('okta-token-storage') || '{}');
+    const token = data.accessToken.accessToken;
+
     async function getMovies() {
         try {
-            const res = await axios.get('/api/movies');
+            const res = await axios.get('/api/movies', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
             setMovies(res.data);
         } catch (err) {
             console.log(err);
@@ -21,7 +28,11 @@ export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
     }
     async function getShows() {
         try {
-            const res = await axios.get('/api/shows');
+            const res = await axios.get('/api/shows', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
             setShows(res.data);
         } catch (err) {
             console.log(err);
@@ -50,5 +61,12 @@ export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
             <ShowsTable movies={movies} shows={shows} />
         </PageContent>
     );
+};
+
+export const getToken = () => {
+    const data = JSON.parse(localStorage.getItem('okta-token-storage') || '{}');
+    const token = data.accessToken.accessToken;
+
+    return token;
 };
 Dashboard.displayName = 'Dashboard';

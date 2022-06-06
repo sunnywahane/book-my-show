@@ -11,6 +11,8 @@ export const ShowsTable: FC<ShowTableProps> = ({ movies, shows }) => {
                         <th scope="col">Sr.No</th>
                         <th scope="col">Start time</th>
                         <th scope="col">Movie</th>
+                        <th scope="col">Movie Language</th>
+                        <th scope="col">Movie Type</th>
                         <th scope="col">Price</th>
                     </tr>
                 </thead>
@@ -20,6 +22,8 @@ export const ShowsTable: FC<ShowTableProps> = ({ movies, shows }) => {
                             <th scope="row">{index + 1}</th>
                             <td>{show.startTime}</td>
                             <td>{show.movieId}</td>
+                            <td>{show.movieLanguage}</td>
+                            <td>{show.movieType}</td>
                             <td>{show.price}</td>
                         </tr>
                     ))}

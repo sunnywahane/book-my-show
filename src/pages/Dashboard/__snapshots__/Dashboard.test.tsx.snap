@@ -779,6 +779,98 @@ exports[`Dashboard should render properly 1`] = `
         </div>
       </div>
       <div
+        class="c10"
+        id="movie-wrapper"
+      >
+        <div
+          class="c11 c12"
+          id="movie-input-wrapper"
+        >
+          <div
+            class="c13"
+          >
+            <div
+              class="c14"
+            >
+              <input
+                aria-describedby="movie-helper-text"
+                autocomplete="off"
+                class="c15"
+                id="movie-input"
+                placeholder="Select Language"
+                readonly=""
+                type="text"
+                value="Select"
+              />
+              <label
+                class="c16 c17"
+                for="movie-input"
+              />
+            </div>
+            <svg
+              class="c18 c19 c20 c21"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="c10"
+        id="movie-wrapper"
+      >
+        <div
+          class="c11 c12"
+          id="movie-input-wrapper"
+        >
+          <div
+            class="c13"
+          >
+            <div
+              class="c14"
+            >
+              <input
+                aria-describedby="movie-helper-text"
+                autocomplete="off"
+                class="c15"
+                id="movie-input"
+                placeholder="Select Type"
+                readonly=""
+                type="text"
+                value="Select"
+              />
+              <label
+                class="c16 c17"
+                for="movie-input"
+              />
+            </div>
+            <svg
+              class="c18 c19 c20 c21"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+      <div
         class="c3"
         id="price-field"
       >
@@ -829,6 +921,16 @@ exports[`Dashboard should render properly 1`] = `
             scope="col"
           >
             Movie
+          </th>
+          <th
+            scope="col"
+          >
+            Movie Language
+          </th>
+          <th
+            scope="col"
+          >
+            Movie Type
           </th>
           <th
             scope="col"
@@ -1665,6 +1767,98 @@ exports[`Dashboard should show loading if isLoading Prop is true 1`] = `
         </div>
       </div>
       <div
+        class="c12"
+        id="movie-wrapper"
+      >
+        <div
+          class="c13 c14"
+          id="movie-input-wrapper"
+        >
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <input
+                aria-describedby="movie-helper-text"
+                autocomplete="off"
+                class="c17"
+                id="movie-input"
+                placeholder="Select Language"
+                readonly=""
+                type="text"
+                value="Select"
+              />
+              <label
+                class="c18 c19"
+                for="movie-input"
+              />
+            </div>
+            <svg
+              class="c20 c21 c22 c23"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="c12"
+        id="movie-wrapper"
+      >
+        <div
+          class="c13 c14"
+          id="movie-input-wrapper"
+        >
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <input
+                aria-describedby="movie-helper-text"
+                autocomplete="off"
+                class="c17"
+                id="movie-input"
+                placeholder="Select Type"
+                readonly=""
+                type="text"
+                value="Select"
+              />
+              <label
+                class="c18 c19"
+                for="movie-input"
+              />
+            </div>
+            <svg
+              class="c20 c21 c22 c23"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+      <div
         class="c5"
         id="price-field"
       >
@@ -1715,6 +1909,16 @@ exports[`Dashboard should show loading if isLoading Prop is true 1`] = `
             scope="col"
           >
             Movie
+          </th>
+          <th
+            scope="col"
+          >
+            Movie Language
+          </th>
+          <th
+            scope="col"
+          >
+            Movie Type
           </th>
           <th
             scope="col"
